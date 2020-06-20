@@ -1,28 +1,49 @@
-'use strict';
+// 'use strict';
+// //1
+// let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
+// //2
+// let personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {
+//         question1: lastWatchFilm,
+//         question2: rateFilm
+//     },
+//     actors: {},
+//     genres: [],
+//     privat: false
 
-console.log('arr' + ' - object');
+// };
+
+// //3
 
 
-console.log(4 + '5');  //Унарный плюс
+// var lastWatchFilm = prompt('Один из последних просмотренных фильмов ? ');
+// var rateFilm = prompt('На сколько оцените его? ');
 
 
-let incr = 10,  
-    decr = 10;
-
-    // ++incr;
-    // --decr;
-
-    console.log(++incr);
-    console.log(--decr);
-
-    console.log(5%2);
 
 
-    console.log(2 + 2 * 2 !== '6');
+//решение
 
-  
-    const isChecked = false,
-          isClose = false;
+//1 
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//2
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors: {},
+    genres:[],
+    privat:false
 
-// console.log(isChecked && isClose === true);
-console.log(isChecked || !isClose );
+};
+
+const a = prompt('Один из последних просмотренных фильмов ?', ''),
+      b = prompt('На сколько оцените его?' , ''),
+      c = prompt('Один из последних просмотренных фильмов ?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
